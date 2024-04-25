@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 
 
-from brain_games import welcome_user, victory
+from brain_games import welcome_user, generator, request, victory
+from brain_games import even, is_valid_answer, conclusion, GAME_LIMIT
 
 
 def main():
-    print("Welcome to the Brain Games!")
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    if victory():
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
+    count = 0
+    while count < GAME_LIMIT:
+        question = generator("even")
+        answer = request(question)
+        current_answer = even(question)
+        valid_answer = is_valid_answer(answer)
+        if conclusion(current_answer, answer, valid_answer, name):
+            count += 1
+    victory(name)
     exit()
 
 

@@ -1,34 +1,38 @@
-import random
+from random import randint
+from brain_games.const import SIGNS
 
 
-message = "is wrong answer ;(. Correct answer was"
+def generator(text):
+    random_number1 = randint(1, 100)
+    random_number2 = randint(1, 10)
+    sign = SIGNS[randint(0, 2)]
+    match text:
+        case "even":
+            return random_number1
+        case "calc":
+            return random_number1, random_number2, sign
+        case _:
+            return None
 
 
-def request():
-    selected_number = random.randint(1, 100)
-    print(f'Question: {selected_number}')
-    answer = input("Your answer: ")
-    return examination(selected_number, answer)
-
-
-def examination(num, text):
-    even_number = not bool(num % 2)
-    if even_number == (True if text == "yes" else False) and valid_answer(text):
-        print("Correct!")
-        return True
-    print(f'"{text}" {message} "{("yes" if even_number else "no")}".')
-    return False
-
-
-def valid_answer(text):
+def is_valid_answer(text):
     return (text == "yes" or text == "no")
 
 
-def victory():
-    count = 0
-    while count < 3:
-        if request():
-            count += 1
-        else:
-            return False
-    return True
+def even(number):
+    current_answer = not bool(number % 2)
+    return ("yes" if current_answer else "no")
+
+
+def is_integer(answer):
+    return answer.isdigit()
+
+
+def calculate(number1, number2, sign):
+    match sign:
+        case "+":
+            return (int(number1) + int(number2))
+        case "-":
+            return (int(number1) - int(number2))
+        case _:
+            return (int(number1) * int(number2))
