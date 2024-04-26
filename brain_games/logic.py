@@ -1,12 +1,13 @@
 from random import randint
-from brain_games.const import SIGNS, CELLS
+from brain_games.const import SIGNS, CELLS, START, END, END_OF_BASKET
+from brain_games.const import SIGN_START, SIGN_END
 
 
-def generator(text, divider=1):
-    random_number1 = randint(1, 100)
-    random_number2 = randint(1, 100 // divider)
-    random_number3 = randint(2, 7)
-    sign = SIGNS[randint(0, 2)]
+def generator(text, divider=START):
+    random_number1 = randint(START, END)
+    random_number2 = randint(START, END // divider)
+    random_number3 = randint(START, END_OF_BASKET)
+    sign = SIGNS[randint(SIGN_START, SIGN_END)]
     match text:
         case "even":
             return random_number1
