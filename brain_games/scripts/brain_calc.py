@@ -12,8 +12,12 @@ def main():
     while count < GAME_LIMIT:
         divider = 10
         number1, number2, sign = generator("calc", divider)
+        current_answer = calculate(number1, number2, sign)
+        while current_answer < 0:
+            number1, number2, sign = generator("calc", divider)
+            current_answer = calculate(number1, number2, sign)
         answer = request(f'{number1} {sign} {number2}')
-        current_answer = str(calculate(number1, number2, sign))
+        current_answer = str(current_answer)
         valid_answer = is_integer(answer)
         if conclusion(answer, current_answer, valid_answer, name):
             count += 1
