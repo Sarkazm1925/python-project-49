@@ -66,7 +66,16 @@ def fill(number1, number2, sign, number3):
             basket += ".."
         else:
             basket += str(cell)
-        if count < CELLS-1:
+        if count < (CELLS - 1):
             basket += " "
         count += 1
     return basket, current_answer
+
+
+def prime(number):
+    count = 2
+    while count < number // 2:
+        if number % count == 0:
+            return "no"
+        count += 1
+    return "yes"
