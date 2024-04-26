@@ -63,7 +63,7 @@ def fill(number1, number2, sign, number3):
     while count < CELLS:
         cell = calculate(number1, number2 * count, sign)
         if count == number3:
-            current_answer = str(cell)
+            current_answer = cell
             basket += ".."
         else:
             basket += str(cell)

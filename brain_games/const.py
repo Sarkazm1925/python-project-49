@@ -1,5 +1,5 @@
 GAME_LIMIT = 3
-SIGNS = ["+", "-", "*"]
+SIGNS = ["-", "+", "*"]
 TEXT = "is wrong answer ;(. Correct answer was"
 CELLS = 10
 START = 1

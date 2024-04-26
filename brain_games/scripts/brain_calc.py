@@ -15,7 +15,7 @@ def main():
         answer = request(f'{number1} {sign} {number2}')
         current_answer = str(calculate(number1, number2, sign))
         valid_answer = is_integer(answer)
-        if conclusion(current_answer, answer, valid_answer, name):
+        if conclusion(answer, current_answer, valid_answer, name):
             count += 1
     victory(name)
     exit()
