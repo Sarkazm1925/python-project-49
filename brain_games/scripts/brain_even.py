@@ -7,7 +7,7 @@ from brain_games import even, is_valid_answer, conclusion, GAME_LIMIT
 
 def main():
     name = welcome_user()
-    task("even ,o")
+    task("even, o")
     count = 0
     while count < GAME_LIMIT:
         question = generator("even")
