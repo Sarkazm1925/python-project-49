@@ -1,10 +1,11 @@
 from random import randint
-from brain_games.const import SIGNS
+from brain_games.const import SIGNS, CELLS
 
 
 def generator(text, divider=1):
     random_number1 = randint(1, 100)
     random_number2 = randint(1, 100 // divider)
+    random_number3 = randint(2, 7)
     sign = SIGNS[randint(0, 2)]
     match text:
         case "even":
@@ -13,6 +14,8 @@ def generator(text, divider=1):
             return random_number1, random_number2, sign
         case "gcd":
             return random_number1, random_number2
+        case "progression":
+            return fill(random_number1, random_number2, sign, random_number3)
         case _:
             return None
 
@@ -51,3 +54,19 @@ def get_gcd(number1, number2):
         else:
             count += 1
     return result
+
+
+def fill(number1, number2, sign, number3):
+    count = 0
+    basket = ""
+    while count < CELLS:
+        cell = calculate(number1, number2 * count, sign)
+        if count == number3:
+            current_answer = str(cell)
+            basket += ".."
+        else:
+            basket += str(cell)
+        if count < CELLS-1:
+            basket += " "
+        count += 1
+    return basket, current_answer
