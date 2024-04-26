@@ -33,4 +33,4 @@ def defeat(name, answer, current_answer):
 
 
 def task(text):
-    print(f'Answer "yes" if the number is {text}, otherwise answer "no".')
+    print(f'Answer "yes" if the number is {text}therwise answer "no".')

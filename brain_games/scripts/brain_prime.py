@@ -7,7 +7,7 @@ from brain_games import prime, is_valid_answer, conclusion, GAME_LIMIT
 
 def main():
     name = welcome_user()
-    task("prime")
+    task("prime. O")
     count = 0
     while count < GAME_LIMIT:
         question = generator("even")
