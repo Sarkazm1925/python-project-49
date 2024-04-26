@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 
-from brain_games import welcome_user, generator, request, victory, task
+from brain_games import welcome_user, generator, request, victory
 from brain_games import even, is_valid_answer, conclusion, GAME_LIMIT
 
 
 def main():
     name = welcome_user()
-    task("even, o")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count < GAME_LIMIT:
         question = generator("even")

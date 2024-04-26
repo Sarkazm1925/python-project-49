@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
 
-from brain_games import welcome_user, generator, request, victory, task
+from brain_games import welcome_user, generator, request, victory
 from brain_games import prime, is_valid_answer, conclusion, GAME_LIMIT
 
 
 def main():
     name = welcome_user()
-    task("prime. O")
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count = 0
     while count < GAME_LIMIT:
         question = generator("even")

@@ -30,7 +30,3 @@ def defeat(name, answer, current_answer):
     print(f"'{answer}' {TEXT} '{current_answer}'")
     print(f"Let's try again, {name}!")
     exit()
-
-
-def task(text):
-    print(f'Answer "yes" if the number is {text}therwise answer "no".')
