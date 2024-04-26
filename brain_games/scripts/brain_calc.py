@@ -10,7 +10,8 @@ def main():
     print('What is the result of the expression?')
     count = 0
     while count < GAME_LIMIT:
-        number1, number2, sign = generator("calc")
+        divider = 10
+        number1, number2, sign = generator("calc", divider)
         answer = request(f'{number1} {sign} {number2}')
         current_answer = str(calculate(number1, number2, sign))
         valid_answer = is_integer(answer)

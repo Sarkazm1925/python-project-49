@@ -2,15 +2,17 @@ from random import randint
 from brain_games.const import SIGNS
 
 
-def generator(text):
+def generator(text, divider=1):
     random_number1 = randint(1, 100)
-    random_number2 = randint(1, 10)
+    random_number2 = randint(1, 100 // divider)
     sign = SIGNS[randint(0, 2)]
     match text:
         case "even":
             return random_number1
         case "calc":
             return random_number1, random_number2, sign
+        case "gcd":
+            return random_number1, random_number2
         case _:
             return None
 
@@ -36,3 +38,16 @@ def calculate(number1, number2, sign):
             return (int(number1) - int(number2))
         case _:
             return (int(number1) * int(number2))
+
+
+def get_gcd(number1, number2):
+    count = 2
+    result = 1
+    while count <= min(number1, number2):
+        if number1 % count == 0 and number2 % count == 0:
+            result *= count
+            number1 = number1 // count
+            number2 = number2 // count
+        else:
+            count += 1
+    return result
