@@ -6,7 +6,7 @@ repository = "https://github.com/Sarkazm1925/python-project-49.git"
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "a package of five games with a mathematical bias"
 authors = ["Sarkazm <sarkazm.hexlet@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "brain_games" }]

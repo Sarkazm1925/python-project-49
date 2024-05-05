@@ -1,5 +1,21 @@
 import prompt
-from brain_games.const import TEXT
+from random import randint
+from .const import GAME_LIMIT, TEXT, START, END
+
+
+def even_start():
+    name = welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    count = 0
+    while count < GAME_LIMIT:
+        question = randint(START, END)
+        answer = request(question)
+        current_answer = ("no" if (question % 2) else "yes")
+        valid_answer = (answer == "yes" or answer == "no")
+        if conclusion(answer, current_answer, valid_answer, name):
+            count += 1
+    print(f"Congratulations, {name}!")
+    exit()
 
 
 def welcome_user():
@@ -20,10 +36,6 @@ def conclusion(answer, current_answer, valid_answer, name):
         print("Correct!")
         return True
     defeat(name, answer, current_answer)
-
-
-def victory(name):
-    print(f"Congratulations, {name}!")
 
 
 def defeat(name, answer, current_answer):

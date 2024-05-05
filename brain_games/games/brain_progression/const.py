@@ -4,6 +4,7 @@ TEXT = "is wrong answer ;(. Correct answer was"
 CELLS = 10
 START = 1
 END = 100
+END2 = 5
 END_OF_BASKET = 8
 SIGN_START = 0
 SIGN_END = 2
