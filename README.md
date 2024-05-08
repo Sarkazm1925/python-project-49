@@ -6,26 +6,26 @@
 
 
 ### Asciinema record
-<script src="https://asciinema.org/a/ovpo9EUKhoTm6lHOlY5LqT4F8" id="asciicast-bJMOlPe5F4mFLY0Rl6fiJSOp3" async></script>
+[![asciicast](https://asciinema.org/a/ovpo9EUKhoTm6lHOlY5LqT4F8.svg)](https://asciinema.org/a/ovpo9EUKhoTm6lHOlY5LqT4F8)
 
-## Description:
+#### Description:
 
-# Five math games - even/odd, calculator, prime number, find the sequence number and greatest common divisor
+##### Five math games - even/odd, calculator, prime number, find the sequence number and greatest common divisor
 
-## Installation:
+#### Installation:
 
-# *download from repository:*
+##### *download from repository:*
 
-# git clone https://github.com/Sarkazm1925/python-project-49.git
+##### git clone https://github.com/Sarkazm1925/python-project-49.git
 
-# *and*
+##### *and*
 
-# pip install --user dist/hexlet_code-0.1.0-py3-none-any.whl
+##### pip install --user dist/hexlet_code-0.1.0-py3-none-any.whl
 
-## Launch commands:
+#### Launch commands:
 
-# brain-even - even/odd
-# brain-calc - calculator
-# brain-prime - prime number
-# brain-progression - find the sequence number
-# brain-gpc - greatest common divisor
+##### brain-even - even/odd
+##### brain-calc - calculator
+##### brain-prime - prime number
+##### brain-progression - find the sequence number
+##### brain-gpc - greatest common divisor
