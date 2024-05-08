@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.brain_progression.logic import progression_start
+from brain_games.games import start_game
+from brain_games.games.brain_progression import TEXT, generator
 
 
 def main():
-    progression_start()
+    start_game(TEXT, generator)
 
 
 if __name__ == '__main__':

@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games.games.brain_calc.logic import calc_start
+from brain_games.games.brain_calc import TEXT, generator
+from brain_games.games import start_game
 
 
 def main():
-    calc_start()
+    start_game(TEXT, generator)
 
 
 if __name__ == '__main__':
