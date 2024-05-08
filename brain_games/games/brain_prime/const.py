@@ -1,4 +1,3 @@
-GAME_LIMIT = 3
-TEXT = "is wrong answer ;(. Correct answer was"
+TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START = 1
 END = 100
