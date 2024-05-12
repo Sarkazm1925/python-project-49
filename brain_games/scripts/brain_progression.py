@@ -2,11 +2,12 @@
 
 
 from brain_games.games import start_game
-from brain_games.games.brain_progression import TEXT, generator
+from brain_games.games import game_progression
 
 
 def main():
-    start_game(TEXT, generator)
+    start_game(game_progression)
+    exit()
 
 
 if __name__ == '__main__':

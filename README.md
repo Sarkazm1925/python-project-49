@@ -12,22 +12,22 @@
 
 #### Description:
 
-##### Five math games - even/odd, calculator, prime number, find the sequence number and greatest common divisor
+**Five math games - even/odd, calculator, prime number, find the sequence number and greatest common divisor**
 
 #### Installation:
 
-##### *download from repository:*
+*download from repository:*
 
-##### git clone https://github.com/Sarkazm1925/python-project-49.git
+**git clone https://github.com/Sarkazm1925/python-project-49.git**
 
-##### *and*
+*and*
 
-##### pip install --user dist/hexlet_code-0.1.0-py3-none-any.whl
+**pip install --user dist/hexlet_code-0.1.0-py3-none-any.whl**
 
 #### Launch commands:
 
-##### brain-even - even/odd
-##### brain-calc - calculator
-##### brain-prime - prime number
-##### brain-progression - find the sequence number
-##### brain-gpc - greatest common divisor
+**brain-even - even/odd**
+**brain-calc - calculator**
+**brain-prime - prime number**
+**brain-progression - find the sequence number**
+**brain-gpc - greatest common divisor**

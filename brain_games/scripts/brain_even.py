@@ -2,11 +2,12 @@
 
 
 from brain_games.games import start_game
-from brain_games.games.brain_even import generator, TEXT
+from brain_games.games import game_even
 
 
 def main():
-    start_game(TEXT, generator)
+    start_game(game_even)
+    exit()
 
 
 if __name__ == '__main__':
