@@ -26,8 +26,8 @@
 
 #### Launch commands:
 
-**brain-even - even/odd**
-**brain-calc - calculator**
-**brain-prime - prime number**
-**brain-progression - find the sequence number**
-**brain-gpc - greatest common divisor**
+#####brain-even - even/odd
+#####brain-calc - calculator
+#####brain-prime - prime number
+#####brain-progression - find the sequence number
+#####brain-gpc - greatest common divisor

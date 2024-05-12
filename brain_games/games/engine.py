@@ -9,11 +9,11 @@ def start_game(link):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(text)
+    print(link.TEXT)
     count = 0
     while count < GAME_LIMIT:
-        current_answer, text_question = link.get_task
-        print(f'Question: {link.TEXT}')
+        current_answer, text_question = link.get_task()
+        print(f'Question: {text_question}')
         answer = input("Your answer: ")
         if current_answer == answer:
             print("Correct!")

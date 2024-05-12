@@ -24,7 +24,7 @@ def create():
     return fill(first_cell, step, hidden_cell)
 
 
-def fill(start, step, hidden_sell):
+def fill(start, step, hidden_cell):
     count = 0
     temp = []
     while count < CELLS:

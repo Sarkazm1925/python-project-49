@@ -10,7 +10,7 @@ END2 = 10
 def get_task():
     first_term = r.randint(START, END)
     second_term = r.randint(START, END2)
-    operation = r.choise('-', '+', '*' )
+    operation = r.choice('-+*')
     current_answer = get_result(first_term, second_term, operation)
     if current_answer < 0:
         current_answer = '-' + str(abs(current_answer))
@@ -24,7 +24,7 @@ def get_result(number1, number2, operation):
             return (int(number1) + int(number2))
         case '-':
             return (int(number1) - int(number2))
-        case _'*':
+        case '*':
             return (int(number1) * int(number2))
         case _:
             return None
