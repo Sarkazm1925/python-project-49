@@ -12,7 +12,13 @@
 
 #### Description:
 
-**Five math games - even/odd, calculator, prime number, find the sequence number and greatest common divisor**
+**“Mind Games” is a set of five console games to boost your brain. Each game asks questions that must be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again.**
+
+##### even - efinition of an even number.
+##### calculator - arithmetic expressions to be evaluated.
+##### prime - definition of a Prime Number.
+##### progression - finding missing numbers in a sequence of numbers.
+##### gcd - finding the Greatest Common Divisor
 
 #### Installation:
 
@@ -26,8 +32,8 @@
 
 #### Launch commands:
 
-#####brain-even - even/odd
-#####brain-calc - calculator
-#####brain-prime - prime number
-#####brain-progression - find the sequence number
-#####brain-gpc - greatest common divisor
+##### brain-even - even/odd
+##### brain-calc - calculator
+##### brain-prime - prime number
+##### brain-progression - find the sequence number
+##### brain-gpc - greatest common divisor
