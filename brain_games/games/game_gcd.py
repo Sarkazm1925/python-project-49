@@ -2,7 +2,7 @@ from random import randint
 from math import gcd
 
 
-TEXT = 'Find the greatest common divisor of given numbers.'
+QUESTION = 'Find the greatest common divisor of given numbers.'
 START = 1
 END = 100
 

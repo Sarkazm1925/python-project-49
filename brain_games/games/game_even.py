@@ -1,7 +1,7 @@
 from random import randint
 
 
-TEXT = 'Answer "yes" if the number is even, otherwise answer "no".'
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 START = 1
 END = 100
 
